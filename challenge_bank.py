@@ -75,6 +75,10 @@ def sacar():
     print("Saldo insuficiente!")
     return
   
+  if valor <= 0:
+    print("Valor inválido!")
+    return
+  
   saldo -= valor
   numero_de_saques += 1
   
