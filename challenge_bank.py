@@ -42,6 +42,11 @@ def depositar():
   global movimentacao 
   
   valor = float(input("Digite o valor do depósito: "))
+  
+  if valor <= 0:
+    print("Valor inválido!")
+    return
+  
   saldo += valor
   print(f"Depósito de R${valor:.2f} realizado com sucesso!")
   print(f"Saldo atual: R${saldo:.2f}")
