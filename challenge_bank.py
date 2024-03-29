@@ -16,7 +16,7 @@ movimentacao = ""
 
 def main():
   while True:
-    opcao = input(menu)
+    opcao = input(MENU)
     
     if opcao == "1":
       depositar()
